@@ -41,8 +41,8 @@ public class RegisterActivity extends AppCompatActivity implements AdapterView.O
     private FirebaseAuth mAuth;
 
     @Override
-    protected void onPostResume() {
-        super.onPostResume();
+    protected void onResume() {
+        super.onResume();
 
         Button regBtn = findViewById(R.id.reg_reg_btn);
         Button cancel = findViewById(R.id.reg_cancel_btn);
@@ -160,12 +160,6 @@ public class RegisterActivity extends AppCompatActivity implements AdapterView.O
     protected void onPause() {
         super.onPause();
         Log.i(LOG_TAG, "onPause");
-    }
-
-    @Override
-    protected void onResume() {
-        super.onResume();
-        Log.i(LOG_TAG, "onResume");
     }
 
     @Override
